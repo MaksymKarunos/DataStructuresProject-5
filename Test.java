@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.Scanner;
 
 public class Test{
     public static void main(String[] args){
@@ -33,5 +34,9 @@ public class Test{
         // FOLLOW THE ASSIGNMENT
         // REACH ME OUT FOR QUESTIONS
         */
+        Scanner myScanner = new Scanner(System.in);
+        System.out.println("Enter a number!");
+        int n = myScanner.nextInt();
+        System.out.print("You entered " + n + "!");
     }
 }
