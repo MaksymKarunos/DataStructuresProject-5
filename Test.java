@@ -47,17 +47,27 @@ public class Test{
         System.out.println();
 
         //several objects hashtable speed test
-        myScanner.nextLine();
-        System.out.println("now let's try adding several objects!");
+        System.out.println("now let's try adding several objects to the hash table!");
         System.out.println("how many objects do you want to add?");
         int y = myScanner.nextInt();
         long hashTableMultipleItemsStartTime = System.nanoTime();
+        int keyForHashTableSearch = 1;
         for(int s = 0; s < y; s++){
             myHashTable.put(String.valueOf(s), 4);
+            //this creates a key that will not exist in the table
+            keyForHashTableSearch = s*2;
         }
         long hashTableMultipleItemsEndTime = System.nanoTime();
         System.out.println("Added " + y + " objects in " + ((hashTableMultipleItemsEndTime - hashTableMultipleItemsStartTime)/1000000) + " milliseconds");
 
+        //clears some space
+        System.out.println();
+
+        //search for a key that isn't there speed test
+        long hashTableTestStartTime = System.nanoTime();
+        System.out.println(myHashTable.contains(keyForHashTableSearch));
+        long hashTableTestEndTime = System.nanoTime();
+        System.out.println("checked for object in " + ((hashTableTestEndTime - hashTableTestStartTime) / 1000000) + " milliseconds!");
 
         //clears some space
         System.out.println();
@@ -76,7 +86,28 @@ public class Test{
         System.out.println();
 
         //several objects binary tree speed test
+        System.out.println("now let's try adding several objects to the binary tree!");
+        System.out.println("how many objects do you want to add?");
+        int g = myScanner.nextInt();
+        long binaryTreeMultipleItemsStartTime = System.nanoTime();
+        int keyForBinaryTreeSearch = 1;
+        for(int s = 0; s < g; s++){
+            myAVL.insert(String.valueOf(s));
+            //this creates an object that will not exist in the tree
+            keyForBinaryTreeSearch = s*2;
+        }
+        long binaryTreeMultipleItemsEndTime = System.nanoTime();
+        System.out.println("Added " + g + " objects in " + ((binaryTreeMultipleItemsEndTime - binaryTreeMultipleItemsStartTime)/1000000) + " milliseconds");
 
+        //clears some space
+        System.out.println();
+
+        //search for a key that isn't there speed test
+        long binaryTreeTestStartTime = System.nanoTime();
+        System.out.println(myAVL.contains(String.valueOf(keyForBinaryTreeSearch)));
+        long binaryTreeTestEndTime = System.nanoTime();
+        System.out.println("checked for object in " + ((binaryTreeTestEndTime - binaryTreeTestStartTime) / 1000000) + " milliseconds!");
+        
         myScanner.close();
     }
 }
