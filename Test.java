@@ -15,9 +15,14 @@ public class Test{
         //=======================
         // SAT, NOV 16, 23:59:59=
         //======================
-
+        
 
         //TO-DO ALEJANDRO GONZALEZ
+        //DEADLINE FOR YOU:
+        //=======================
+        // SAT, NOV 16, 23:59:59=
+        //======================
+        //
         // CREATE A SCANNER THAT IS GOING TO READ int N 
         // MEASURE TIME AND COMPLETE THE TABLE ABOVE
         // WHEN YOU START A CALL USE 
