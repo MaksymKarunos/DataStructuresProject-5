@@ -24,7 +24,6 @@ public class Test{
         // SAT, NOV 16, 23:59:59=
         //======================
         //
-        // CREATE A SCANNER THAT IS GOING TO READ int N 
         // MEASURE TIME AND COMPLETE THE TABLE ABOVE
         // WHEN YOU START A CALL USE 
             //long startTime = System.nanoTime();
@@ -34,9 +33,47 @@ public class Test{
         // FOLLOW THE ASSIGNMENT
         // REACH ME OUT FOR QUESTIONS
         */
+
+        //single object hashtable
         Scanner myScanner = new Scanner(System.in);
-        System.out.println("Enter a number!");
+        System.out.println("Enter a number to add to the hash table!");
         int n = myScanner.nextInt();
-        System.out.print("You entered " + n + "!");
+        long hashTableStartTime = System.nanoTime();
+        myHashTable.put("n", n);
+        long hashTableEndTime = System.nanoTime();
+        System.out.println("You entered " + n + " in " + ((hashTableEndTime - hashTableStartTime)/1000000) + " milliseconds!");
+
+        //clears some space
+        System.out.println();
+
+        //several objects hashtable
+        myScanner.nextLine();
+        System.out.println("now let's try adding several objects!");
+        System.out.println("how many objects do you want to add?");
+        int y = myScanner.nextInt();
+        long hashTableMultipleItemsStartTime = System.nanoTime();
+        for(int s = 0; s < y; s++){
+            myHashTable.put(String.valueOf(s), 4);
+        }
+        long hashTableMultipleItemsEndTime = System.nanoTime();
+        System.out.println("Added " + y + " objects in " + ((hashTableMultipleItemsEndTime - hashTableMultipleItemsStartTime)/1000000) + " milliseconds");
+
+
+        //clears some space
+        System.out.println();
+
+        System.out.println("Enter a string to add it to the Binary Tree!");
+        myScanner.nextLine();
+        String x = myScanner.nextLine();
+        long binaryTreeStartTime = System.nanoTime();
+        myAVL.insert(x);
+        long binaryTreeEndTime = System.nanoTime();
+        System.out.println("You entered '" + x + "' in " + ((binaryTreeEndTime - binaryTreeStartTime)/1000000) + " milliseconds!");
+
+
+        //clears some space
+        System.out.println();
+
+        myScanner.close();
     }
 }
