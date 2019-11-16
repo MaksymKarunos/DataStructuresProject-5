@@ -34,7 +34,7 @@ public class Test{
         // REACH ME OUT FOR QUESTIONS
         */
 
-        //single object hashtable
+        //single object hashtable speed test
         Scanner myScanner = new Scanner(System.in);
         System.out.println("Enter a number to add to the hash table!");
         int n = myScanner.nextInt();
@@ -46,7 +46,7 @@ public class Test{
         //clears some space
         System.out.println();
 
-        //several objects hashtable
+        //several objects hashtable speed test
         myScanner.nextLine();
         System.out.println("now let's try adding several objects!");
         System.out.println("how many objects do you want to add?");
@@ -62,6 +62,7 @@ public class Test{
         //clears some space
         System.out.println();
 
+        //single object binary tree speed test
         System.out.println("Enter a string to add it to the Binary Tree!");
         myScanner.nextLine();
         String x = myScanner.nextLine();
@@ -73,6 +74,8 @@ public class Test{
 
         //clears some space
         System.out.println();
+
+        //several objects binary tree speed test
 
         myScanner.close();
     }
