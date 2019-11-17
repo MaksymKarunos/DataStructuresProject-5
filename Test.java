@@ -8,21 +8,6 @@ public class Test {
         Hashtable <Integer, String> myHashTable = new Hashtable<>(1000);
         BinarySearchTree<String> myAVL = new BinarySearchTree<>();
 
-        //blabla blabla
-        /* TO DO FOR PAULA 
-        COMPLETE PARTS 1 AND 2
-        COMPLETE THE HEADER OF THIS CLASS: NAME, PROJECT, OUTPUT, INPUT ETC.
-        NOW, FILL OUT THE BOX AND ANSWER QUESTION 4.
-        MAKE ALL OF THESE CHANGES IN README.MD
-        //DEADLINE FOR YOU:
-        //=======================
-        // SAT, NOV 16, 23:59:59=
-        //======================
-        // REACH ME OUT FOR QUESTIONS
-        
-        I AM IMPLEMENTING THE BONUS QUESTION
-        
-        */
 
         //single object hashtable speed test
         Scanner myScanner = new Scanner(System.in);
