@@ -68,8 +68,13 @@ public class Test {
         long binaryTreeTestStartTime = System.nanoTime();
         System.out.println(myAVL.contains(String.valueOf(n+1)));
         long binaryTreeTestEndTime = System.nanoTime();
-        myAVL.printTree();
+        //FOR TEST PURPOSES
+        //myAVL.printTree();
         System.out.println("checked for object in " + ((binaryTreeTestEndTime - binaryTreeTestStartTime)) + " nanoseconds!");
+        // EXTRA CREDIT
+
+
+
         
         myScanner.close();
     }
