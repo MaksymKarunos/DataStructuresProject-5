@@ -25,6 +25,7 @@ public class Test {
         System.out.println();
 
         //search for a key that isn't there: speed test
+        //
         long hashTableTestStartTime = System.nanoTime();
         System.out.println(myHashTable.containsKey(n));
         long hashTableTestEndTime = System.nanoTime();
