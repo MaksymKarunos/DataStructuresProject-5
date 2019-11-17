@@ -33,6 +33,28 @@
   Searching will most likely take O(1) if the hash function was chosen wisely, but if we need to find an item that was inserted in the same key as many other items, then we will need to scan through a list and this takes O(n) time. In addition, if the item we are searching for is not on the hash table, the hash function is not effective and many item are hashed under the same key, we will need to scan through the entire list until we can claim that the item we are searching for is not in the list. However, this situation is unlikely in hash tables implemented properly and the average search time is O(1).
   
   Question 2:
+  When we insert on an AVL tree the time complexity of each insertion is O(log n). We also need to take into consideration that the tree needs to balance itself that takes O(1). Therefore inserting one element takes O(log n) + 1, which is still O(log n). If we are inserting n items then the total running time will be n* O(log n) which is O(nlogn).
+  Searching one item also takes O(log n) in the case that we have to scan through the tree to conclude that the item is not in the tree. The reason of logn complexity is because every time we search we take away half the tree. Starting on the root we know that the item we are looking for is either on the right or the left depending if the value is greater of lower. This will already get rid of either the right or left tree. We keep doing this until either we find the value or we have scanned the whole tree.
+  
+  
+  Question 3:
+  
+  (ALL TIMES IN NANOSECONDS)
+  
+  CONSTRUCTION TIME|  10^2  | 10^3    |  10^4   | 10^5    | 10^6
+  HASH TABLE       | 508023 | 3358176 |15057934 |86827752 |860114144
+  AVL TREE         | 2066758| 5834300 |22759269 |105262916|100960579
+  
+  
+  
+  
+  SEARCH TIME |  10^2  |  10^3   |  10^4   | 10^5    | 10^6
+  HASH TABLE  | 100003 | 67657   | 72075   |161270   | 92003
+  AVL         | 88416  | 60494   | 88365   |11053    | 124634
+  
+  
+  Question 4:
+  
   
  *
  *
