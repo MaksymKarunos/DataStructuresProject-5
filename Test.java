@@ -6,7 +6,7 @@ public class Test {
         // INSTANCE OF THE OBJECTS
         // 0.75 IS DEFAULT LOAD FACTOR
         Hashtable <Integer, String> myHashTable = new Hashtable<>(1000);
-        BinarySearchTree<String> myAVL = new BinarySearchTree<>();
+        AvlTree<String> myAVL = new AvlTree<>();
 
 
         //single object hashtable speed test
@@ -15,7 +15,7 @@ public class Test {
         int n = myScanner.nextInt();
         long hashTableStartTime = System.nanoTime();
         for (int i =0; i<n; i++){
-            myHashTable.put(i, n+"");
+            myHashTable.put(i, n+""); 
         }
         long hashTableEndTime = System.nanoTime();
         // Time should be in nanoseconds
@@ -25,7 +25,7 @@ public class Test {
         System.out.println();
 
         //search for a key that isn't there: speed test
-        //
+        //git
         long hashTableTestStartTime = System.nanoTime();
         System.out.println(myHashTable.containsKey(n));
         long hashTableTestEndTime = System.nanoTime();
