@@ -8,7 +8,7 @@ public class Test {
         Hashtable <Integer, String> myHashTable = new Hashtable<>(1000);
         BinarySearchTree<String> myAVL = new BinarySearchTree<>();
 
-        
+        //blabla blabla
         /* TO DO FOR PAULA 
         COMPLETE PARTS 1 AND 2
         COMPLETE THE HEADER OF THIS CLASS: NAME, PROJECT, OUTPUT, INPUT ETC.
