@@ -58,6 +58,9 @@ public class Test {
         //myAVL.printTree();
         System.out.println("checked for object in " + ((binaryTreeTestEndTime - binaryTreeTestStartTime)) + " nanoseconds!");
         // EXTRA CREDIT
+        for (int i = 0; i < mArrayMapping.getSize(); i++) {
+            mArrayMapping.insert(i);
+        }
 
 
 
