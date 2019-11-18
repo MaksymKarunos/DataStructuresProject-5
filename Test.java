@@ -7,6 +7,7 @@ public class Test {
         // 0.75 IS DEFAULT LOAD FACTOR
         Hashtable <Integer, String> myHashTable = new Hashtable<>(1000);
         AvlTree<String> myAVL = new AvlTree<>();
+        ArrayMapping mArrayMapping = new ArrayMapping(100);
 
 
         //single object hashtable speed test
