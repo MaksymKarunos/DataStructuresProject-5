@@ -9,6 +9,7 @@ public class Test {
         AvlTree<String> myAVL = new AvlTree<>();
         ArrayMapping mArrayMapping = new ArrayMapping(100);
 
+        //git hub test
 
         //single object hashtable speed test
         Scanner myScanner = new Scanner(System.in);
