@@ -22,7 +22,15 @@ public class ArrayMapping {
         currentSize++;
         return;
     }
-    void remove(int inedx){
-        
+    void remove(int index){
+        if ( index > getSize()){
+            return;
+        }
+        myArr[index] = -1;
+    }
+    void printTree(){
+        for ( int i = 0; i < getSize(); i++ ){
+        System.out.println(myArr[i]);
+        }
     }
 }
