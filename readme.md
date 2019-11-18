@@ -41,7 +41,7 @@
   
   CONSTRUCTION TIME|  10^2  | 10^3    |  10^4   | 10^5    | 10^6
   HASH TABLE       | 508023 | 3358176 |15057934 |86827752 |860114144 | y = 857.341 x + 2.65487×10^6
-  AVL TREE         | 2066758| 5834300 |22759269 |10262916 |100960579 | y = 92.6255 x + 7.79352×10^6
+  AVL TREE         | 2066758| 5834300 |22759269 |10262916 |100960579 | 
   
   
   
@@ -52,6 +52,10 @@
   
   
   Question 4:
+  
+  In order to prove if our conjectures were actually the experimental results we decided to plot them in different graphs. The construction fit for a hash table matches almost perfectly a linear fit, proving then that the linear time for inserting n items must be O(n). For searching we also proved that it must be O(1) since the slope of the linear fit once we plot is -0.000822637, which basically means that the function is constant.
+  
+  The AVL was a little trickier because of the assumption of nlogn running time for n insertions. We plugged the points using excel and compared with what the nlogn graph looks like. One of the points we obtained doesn't really match the nlogn function (10000, 22759269). Only by looking at the points we could have guessed this error since the time for 10^4 insertions is greater than the time for 10^5. (Can't happen since running time grows as we inser more items). The rest of the points do not differ that much with the n log n graph. For searching on an AVL we conclude that our assumption was also correct since the points match almost perfectly with a log fit, making the running time for search  O(log n).
   
  *
  *
