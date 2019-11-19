@@ -63,9 +63,6 @@ public class Test {
         for (int i = 0; i < mArrayMapping.getSize(); i++) {
             mArrayMapping.insert(i);
         }
-
-
-
         
         myScanner.close();
     }
