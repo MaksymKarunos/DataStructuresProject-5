@@ -64,6 +64,7 @@ public class Test {
             mArrayMapping.insert(i);
         }
         ///blblallbllsdfsldf'sd
+        /// coding , eating , sleeping
         
         myScanner.close();
     }
